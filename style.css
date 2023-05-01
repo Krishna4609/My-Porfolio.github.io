@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
+    color:  rgb(212, 211, 211);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.navlists{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    /* background-color: red; */
+}
+.navlists a{
+    text-decoration: none;
+    color: rgb(229, 150, 2);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navlists li{
+    list-style: none;
+}
+
+.menu div{
+    background-color: white;
+    width: 20px;
+    height: 3px;
+    margin: 5px;
+}
+.menu{
+    opacity: 0;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .navlists{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        /* background-color: red; */
+    }
+    .profilepic{
+        display: flex;
+        justify-content: center;
+    }
+    .profilepic img{
+        border-radius: 50%;
+        width: 270px;
+        height: 270px;
+    }
+    .intro{
+        font-size: 15px;
+        margin: 10px;
+        width: max-content;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .welcome{
+        font-weight: bold;
+        margin: 9px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .navlists{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color:rgb(23, 23, 23);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 42%;
+        transform:translateX(100%);
+        transition:all 0.5s ease-in;
+        opacity: 0;
+        /* background-color: red; */
+    }
+    .navlists li{
+        opacity: 0;
+    }
+    .menu{
+        opacity: 1;
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .profilepic{
+        display: flex;
+        justify-content: center;
+    }
+    .profilepic img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+    .intro{
+        font-size: 11px;
+        margin: 10px;
+        width: max-content;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .welcome{
+        font-weight: bold;
+        margin: 9px;
+    }
+}
+.navclick{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.profilepic{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+.profilepic img{
+    border-radius: 50%;
+}
+
+.intro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.welcome{
+    font-weight: bold;
+    margin: 9px;
+}
+
+.socialmedia{
+    display: flex;
+
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.sociallogos img{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+

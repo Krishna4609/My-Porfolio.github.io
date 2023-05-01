@@ -20,6 +20,14 @@ nav{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.profilepic img{
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px 10px rgb(0,0,0,0.3);
+    background-color: rgb(228 228 228 / 15%); 
+}
+
 
 .navlists{
     display: flex;
@@ -34,6 +42,12 @@ nav{
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+.navlists a:hover{
+    position: relative;
+    bottom: 5px;
+}
+
 .navlists li{
     list-style: none;
 }
@@ -47,6 +61,19 @@ nav{
 .menu{
     opacity: 0;
 }
+
+body{
+    background-image: url(images/5570863.jpg);
+}
+.sociallogos img:hover{
+    position: relative;
+    bottom: 4px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 10px 15px 2px rgb(0,0,0,0.3);
+    background-color: rgb(228 228 228 / 15%); 
+}
+
 
 
 
@@ -65,6 +92,11 @@ nav{
         border-radius: 50%;
         width: 270px;
         height: 270px;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px 10px rgb(0,0,0,0.3);
+        background-color: rgb(228 228 228 / 15%); 
     }
     .intro{
         font-size: 15px;
@@ -115,6 +147,11 @@ nav{
         border-radius: 50%;
         width: 200px;
         height: 200px;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px 10px rgb(0,0,0,0.3);
+        background-color: rgb(228 228 228 / 15%); 
     }
     .intro{
         font-size: 11px;
@@ -179,5 +216,29 @@ nav{
     
 }
 
+.about{
+    display: flex;
+    justify-content: center;
+}
 
+.imageabout{
+    margin-left: 80px;
+}
 
+.imageabout img{
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px 2px;
+    width: 70%;
+    height: 200px;
+}
+
+.textabout{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px 10px rgb(0,0,0,0.3);
+    background-color: rgba(0, 140, 255, 0.096); 
+}
